@@ -9,7 +9,6 @@ const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('tiny'));
 app.use(cors());
-// uses for to access the data sent from the client side
 app.use(express.json());
 
 app.post("/register", (req, res) => {
