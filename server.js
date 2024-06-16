@@ -13,10 +13,12 @@ app.use(express.json());
 
 app.post("/register", (req, res) => {
   console.log(req.body);
+  //...
   res.json({success: "User Added successfully"});
 })
 
 app.post("/login", (req, res) => {
+  //...
   console.log(req.body);
 })
 
